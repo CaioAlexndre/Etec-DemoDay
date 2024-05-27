@@ -11,8 +11,8 @@ ranqueamento
 
 <h1> no back end </h1>/
 --
-<br>
- Registro de usuário:
+
+ *Registro de usuário:*
    <p></p>A API registrar usuários recém-criados e retornar uma mensagem se o usuário já existe no banco de dados.
  Validação de senha:
   <p>É verificado se o usuario digitou uma senha com o requisistos minimos de tamanho,caracteres maiusculos e minisculos,simbolos e números,e por
