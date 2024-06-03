@@ -1,0 +1,24 @@
+INSERT INTO curso(curso)
+VALUES ('Desenvolvimento de Sistemas'),
+('Administração'),
+(Comércio Exterior'),
+('Design de Interiores'),
+('Eletrônica'),
+('Secretariado'),
+('Serviços Jurídicos),
+('Ensino Médio - Administração'),
+('Ensino Médio - Desenvolvimento de Sistemas'),
+('Ensino Médio - Design Gráfico'),
+('Ensino Médio - Eletrônica'),
+('Ensino Médio - Eventos'),
+('Ensino Médio - Informática para internet),
+('Ensino Médio - Serviços Jurídicos')
+
+INSERT INTO disciplina(disciplina, fk_curso)
+VALUES ('Programação e Algoritmos', 1),
+('Banco de Dados I', 1), 
+('Ética e Cidadania Organizacional', 1),
+('Design Digital', 1),
+('Programação Web I', 1),
+('Fundamentos da Informática', 1),
+('Operação de Software e Aplicativo',1)
