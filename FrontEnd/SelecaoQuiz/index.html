@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Disciplina e Assunto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(img/Design\ sem\ nome\ \(2\).png);
+            background-size: cover;
+            /* background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%); */
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-image: url(img/6691887-amarelo-ponto-de-interrogacao-fundo-com-texto-espaco-simbolo-quiz-vetor.jpg);
+            background-size: cover;
+            
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        select, input[type="text"], input[type="submit"] {
+            padding: 10px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        select {
+            appearance: none;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        input[type="text"] {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <h2>Escolha a disciplina e o assunto</h2>
+        <form action="resultado.php" method="post">
+            <select name="disciplina" id="disciplina">
+                <option value="">Selecione a disciplina</option>
+                <option value="historia">História</option>
+                <option value="geografia">Geografia</option>
+                <option value="matematica">Matemática</option>
+                <!-- Adicione outras disciplinas aqui -->
+            </select>
+            <br>
+            <input type="text" name="assunto" placeholder="Digite o assunto">
+            <br>
+            <input type="submit" value="Buscar">
+        </form>
+    </div>
+</body>
+</html>
