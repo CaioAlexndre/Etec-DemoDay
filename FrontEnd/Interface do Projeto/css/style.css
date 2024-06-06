@@ -114,3 +114,23 @@ p button {
     cursor: pointer;
     font-size: 14px;
 }
+#opcoes {
+    display: none;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#opcoes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#opcoes ul li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#opcoes ul li:hover {
+    background-color: #f0f0f0;
+}
