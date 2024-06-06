@@ -38,3 +38,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+function mostrarOpcoes(valor) {
+    var pesquisa = document.getElementById('campoInput');
+    pesquisa = pesquisa.toLowerCase()  finalizar
+
+    // Oculta o contêiner de opções se o campo de entrada estiver vazio
+    if (valor === '') {
+        opcoesContainer.style.display = 'none';
+        return;
+    }
+
+    // Filtra e mostra as opções correspondentes
+    opcoes.forEach(function(opcao) {
+        if (opcao.textContent.toLowerCase().indexOf(valor.toLowerCase()) !== -1) {
+            opcao.style.display = 'block';
+        } else {
+            opcao.style.display = 'none';
+        }
+    });
+
+    // Exibe o contêiner de opções
+    opcoesContainer.style.display = 'block';
+}

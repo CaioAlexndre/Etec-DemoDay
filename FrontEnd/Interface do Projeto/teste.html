@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção com Input</title>
+    <style>
+        #opcoes {
+            display: none;
+            border: 1px solid #ccc;
+            max-height: 150px;
+            overflow-y: auto;
+        }
+
+        #opcoes ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #opcoes ul li {
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        #opcoes ul li:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <div class="pesquisa">
+        <input type="text" id="campoInput" oninput="mostrarOpcoes(this.value)">
+        <div id="opcoes">
+            <ul id="listaOpcoes">
+                <li id="op2">Opção 2</li>
+                <li>Opção 3</li>
+                <li>Opção 4</li>
+                <li>Opção 5</li>
+                <!-- Adicione mais opções conforme necessário -->
+            </ul>
+        </div>
+    </div>
+    <div id="content-area">
+        <img src="img/placeholder.jpg" width="90px" id="img"><br>
+        <h1 id="titulo">Lorem ipsum</h1><br>
+        <p id="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi recusandae voluptatibus laudantium neque nostrum expedita pariatur, quaerat eius nobis deleniti dolores sint soluta saepe quia maxime odio commodi obcaecati rem?
+        Molestiae officia nam at doloribus non consequuntur quas cumque ducimus repellat est! Nemo ullam temporibus aliquam quam, est voluptate dolore, aliquid laborum culpa, dicta perspiciatis tempore rerum minima odit nisi?
+        Molestiae aliquid quas amet similique cumque laboriosam eligendi culpa, facere dicta deserunt, expedita neque nobis architecto repudiandae, enim saepe quia aut vel. Alias beatae dignissimos, dolor aliquam dolores voluptatem ipsam!
+        Voluptate recusandae veniam aspernatur eligendi in quis cumque quasi, labore delectus distinctio voluptas laborum velit incidunt sit. Blanditiis autem, maiores eaque vero deleniti quibusdam voluptates, voluptas, minus quam eligendi nam!
+        </p><br>
+        <button type="button" id="btn-comecarTeste"><a href="index.html">Começar teste</a></button>
+    </div>
+    </main>
+    <script>
+        function mostrarOpcoes(valor) {
+            let opcoes = document.querySelectorAll('#listaOpcoes li');
+            let opcoesContainer = document.getElementById('opcoes');
+
+            // Oculta o contêiner de opções se o campo de entrada estiver vazio
+            if (valor === '') {
+                opcoesContainer.style.display = 'none';
+                return;
+            }
+
+            // Filtra e mostra as opções correspondentes
+            opcoes.forEach(function(opcao) {
+                if (opcao.textContent.toLowerCase().indexOf(valor.toLowerCase()) !== -1) {
+                    opcao.style.display = 'block';
+                } else {
+                    opcao.style.display = 'none';
+                }
+            });
+
+            // Exibe o contêiner de opções
+            opcoesContainer.style.display = 'block';
+        }
+    const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
+// Função para buscar dados da API
+    async function fetchData(url) {
+    try {
+        const response = await fetch(url);
+        const disciplina = await response.json();
+        return disciplina;
+    } catch (error) {
+        console.error('Não foi possível encontrar os dados solicitados. Erro:', error);
+    }
+}
+
+    async function createList() {
+      const listaItens = document.getElementById('lista-itens');
+      const disciplina = await fetchData(apiUrl);
+      
+      if (disciplina) {
+        disciplina.forEach(item => { //esse item sera um obejto acessavel
+          const listItem = document.createElement('li');
+          listItem.textContent = item.title; // Exibe o título do item na lista
+          listItem.addEventListener('click', () => {
+            let img = document.getElementById('img');
+            let titulo = document.getElementById('titulo');
+            let descricao = document.getElementById('descricao');
+            let btnComecarTeste = document.getElementById('btn-comecarTeste');
+            
+            titulo.textContent = item.titulo;
+            descricao.text = item.descricao;
+            // Exibe o corpo do item em um alerta ao clicar
+          });
+          listaItens.appendChild(listItem);
+        });
+      }
+    }
+
+    // Chamada da função para criar a lista
+    createList();
+    </script>
+</body>
+</html>
