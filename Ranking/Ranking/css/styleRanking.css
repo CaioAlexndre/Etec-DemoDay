@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/** Header **/
+header {
+    background: #ddd;
+    margin-bottom: 75px;
+    height: 75px;
+    width: 100%;
+    display: flex;
+}
+header p {
+    color: #000;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-section {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.user-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30px;
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-right: 40px;
+    text-align: center;
+}
+.user-header img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-bottom: 5px; 
+}
+.user-header p {
+    margin: 0; 
+}
+
+/** Container **/
+.butt-rank-geral {
+    background-color: #f0f0f0;
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.ranking-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 90px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    margin-bottom: 20px;
+}
+.ranking-container h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img-user {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+.user-name {
+    margin-left: 30px;
+}
+.user-pts {
+    margin-left: 450px;
+}
+.ranking-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/** Desempenho **/
+.pont-atual {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+}
+.pont-atual h2 {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 20px;
+}
+.despAtual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pontAdd {
+    margin-left: auto;
+}
