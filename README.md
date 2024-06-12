@@ -4,13 +4,13 @@ Projeto em grupo com a junção das classes A e B.
 Projeto consiste na criação de um site que será um Quiz online sobre disciplinas da etec.
 temos as seguintes divisões de grupos e tarefas.
 
-<h1>No front </h1>
+<h1>Front </h1>
 ---
 login de usuario 
 ranqueamento
 --
 
-<h1> no back end </h1>
+<h1>Back end </h1>
 
 
  **Registro de usuário:**
