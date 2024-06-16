@@ -1,0 +1,62 @@
+:root{
+    --preto: #000;
+    --branco: #f5f5f5;
+    --rosa: #F15B5C;
+    --azul: #7E85DF;
+    --amarelo: #F2A74B;
+    --branco-acizentado: #eeeeee;
+  }  
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
+}
+
+.container {
+    width: 80vw;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url(img/6691887-amarelo-ponto-de-interrogacao-fundo-com-texto-espaco-simbolo-quiz-vetor.jpg);
+    background-size: cover;
+}
+
+
+select, input[type="text"], input[type="submit"] {
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#curso {
+    width: 40%;
+    appearance: none;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#disciplina{
+    width: 50%;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#btn-enviar{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

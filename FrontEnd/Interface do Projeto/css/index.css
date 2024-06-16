@@ -1,0 +1,86 @@
+:root{
+  --preto: #000;
+  --branco: #f5f5f5;
+  --rosa: #F15B5C;
+  --azul: #7E85DF;
+  --amarelo: #F2A74B;
+  --branco-acizentado: 
+}
+
+button:hover{
+  transform: scale(1.1);
+  border: 2px solid var(--branco);
+  font-weight: 500;
+  transition-duration: 0.4s;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--azul);
+    line-height: 2rem;
+    letter-spacing: 0.15rem;
+}
+
+a{
+  text-decoration: none;
+  color: var(--branco);
+  cursor: pointer;
+}
+
+hr{
+  width: 97%;
+  color: var(--branco)
+}
+
+header {
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chamada-section{
+  margin-top: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+img{
+  margin-left: 8vw;
+  width: 26rem;
+  height: 31.25rem;
+}
+
+button{
+  color: var(--branco);
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--branco);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#btn-start{
+  font-size: 1.5rem;
+
+}
+
+.chamada{
+  margin-right: 8rem;
+  width: 40rem;
+  color:#f5f5f5;
+}
+
+.chamada > h1{
+  line-height: 3rem;
+}
+.chamada > p{
+  text-align: justify;
+}
+

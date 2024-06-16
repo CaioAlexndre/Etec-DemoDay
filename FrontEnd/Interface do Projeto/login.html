@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <button class="google-login" onclick="window.location.href='https://accounts.google.com/signin/v2/identifier'">Logar com Google</button>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="button" id="forgot-password"><a href="recuperacaoSenha.html">Esqueci minha senha</a></button>
+            <button type="submit">Entrar</button>
+        </form>
+        <p>Não tem uma conta? 
+        <br>
+        <br>
+        <a href="TelaRegistro.html" id="go-to-register">Registre-se</a></p>
+    </div>
+
+    <script src="jss/script.js"></script>
+</body>
+</html>
