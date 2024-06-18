@@ -1,57 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ranking Pós Partida</title>
     <link rel="stylesheet" href="css/ranking.css">
-    
+    <link rel="stylesheet" href="css/header.css">
+    <style>
+        body {
+            background-color: #4B39B5;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <nav class="nav">
+        <nav class="font-montserrat nav">
             <p>QUIZ ETEC ALBERT EINSTEIN</p>
             <div class="right-section">
-                <a href="RankingGeral.html"><button class="butt-rank-geral">Ranking Geral</button></a>
+                <a href="RankingGeral.html"><button class="butt-rank-geral font-montserrat">Ranking Geral</button></a>
                 <div class="user-header">
-                    <img src="img/placeholder.jpg" alt="user">
-                    <p id="username-header">${username}</p>
+                    <a href="usuario.html"><img id="userfoto-header" src="img/placeholder.jpg" alt="user">
+                        <p id="username-header">username</p>
+                    </a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="ranking-container">
-        <h1>Ranking</h1>
-        <!--<div class="ranking" id="ranking">
-            <div class="ranking-item">
-                <span>1</span>
-                <img class="img-user" src="img/placeholder.jpg" alt="">
-                <span class="user-name" id="user-name">username</span>
-                <span class="user-pts" id="pts">pontuação</span>
-            </div>
-            <div class="ranking-item">
-                <span>2</span>
-                <img class="img-user" src="img/placeholder.jpg" alt="">
-                <span class="user-name" id="user-name">username</span>
-                <span class="user-pts" id="pts">pontuação</span>
-            </div>
-            <div class="ranking-item">
-                <span>3</span>
-                <img class="img-user" src="img/placeholder.jpg" alt="">
-                <span class="user-name" id="user-name">username</span>
-                <span class="user-pts" id="pts">pontuação</span>
-            </div>
-        </div>-->
-    </div>
+    <div class="align-container">
+        <img class="img-left" src="img/rank-pos.png" alt="">
 
-    <div class="pont-atual">
-        <h2>Seu desempenho</h2>
-        <div class="despAtual">
-            <p class="UserAtual" id="user-atual">UserAtual</p>
-            <p class="pontAdd">Pontos Adicionados: <span id="pont-add">100</span></p>
+        <div class="font-montserrat rank-pos-container">
+            <div class="ranking-container-pos">
+                <h1 class="font-fredoka">Ranking</h1>
+                <div class="ranking" id="ranking">
+                    <div class="ranking-item-pos">
+                        <span>1</span>
+                        <img class="img-user-pos" src="img/placeholder.jpg" alt="">
+                        <span class="user-name-pos" id="user-name">username</span>
+                        <span class="user-pts-pos" id="pts">pontuação</span>
+                    </div>
+                    <div class="ranking-item-pos">
+                        <span>2</span>
+                        <img class="img-user-pos" src="img/placeholder.jpg" alt="">
+                        <span class="user-name-pos" id="user-name">username</span>
+                        <span class="user-pts-pos" id="pts">pontuação</span>
+                    </div>
+                    <div class="ranking-item-pos">
+                        <span>3</span>
+                        <img class="img-user-pos" src="img/placeholder.jpg" alt="">
+                        <span class="user-name-pos" id="user-name">username</span>
+                        <span class="user-pts-pos" id="pts">pontuação</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pont-atual-container">
+                <h1 class="font-fredoka">Seu desempenho</h1>
+                <div class="despAtual">
+                    <p class="UserAtual" id="user-atual">UserAtual</p>
+                    <p class="pontAdd">Pontos Adicionados: <span id="pont-add">100</span></p>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="jss/scriptRanking.js"></script>
+    <script src="jss/ranking.js"></script>
 </body>
+
 </html>

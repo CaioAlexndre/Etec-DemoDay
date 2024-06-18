@@ -5,11 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz de Conhecimento Geral</title>
     <link rel="stylesheet" href="css/quiz-teste.css">
+    <style>
+
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Quiz de Conhecimento Geral</h1>
+        <div class="questoes">
+            <h1>Quiz de Conhecimento Geral</h1>
+            <div class="question active" id="pergunta1">
+                <h2>Pergunta 1:</h2>
+                <p>Nível de Dificuldade:⭐</p>
+                <p>Qual é a capital da França?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q1" value="a"> A) Londres</li>
+                    <li><input type="radio" name="q1" value="b"> B) Paris</li>
+                    <li><input type="radio" name="q1" value="c"> C) Roma</li>
+                    <li><input type="radio" name="q1" value="d"> D) Brasília</li>
+                </ul>
+                <div class="buttons">
+                    <button onclick="responder('q1', 'pergunta2')">Responder</button>
+                    <button onclick="showQuestion('pergunta2')">Próxima Pergunta</button>
+                </div>
+                <p id="feedback-q1" style="display: none;">Resposta Correta: Parabéns! Você acertou!</p>
+            </div>
 
+            <div class="question" id="pergunta2">
+                <h2>Pergunta 2:</h2>
+                <p><strong>Nível de Dificuldade:</strong> ⭐⭐</p>
+                <p>Quem escreveu "Dom Quixote"?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q2" value="a"> A) William Shakespeare</li>
+                    <li><input type="radio" name="q2" value="b"> B) Miguel de Cervantes</li>
+                    <li><input type="radio" name="q2" value="c"> C) Machado de Assis</li>
+                    <li><input type="radio" name="q2" value="d"> D) Fernando Pessoa</li>
+                </ul>
+                <button onclick="responder('q2', 'pergunta3')">Responder</button>
+                <button onclick="showQuestion('pergunta3')">Próxima Pergunta</button>
+                <p id="feedback-q2" style="display: none;">Resposta Correta: Parabéns! Você acertou!</p>
+            </div>
+
+            <div class="question" id="pergunta3">
+                <h2>Pergunta 3:</h2>
+                <p><strong>Nível de Dificuldade:</strong> ⭐</p>
+                <p>Quem pintou "Mona Lisa"?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q3" value="a"> A) Michelangelo</li>
+                    <li><input type="radio" name="q3" value="b"> B) Leonardo da Vinci</li>
+                    <li><input type="radio" name="q3" value="c"> C) Pablo Picasso</li>
+                    <li><input type="radio" name="q3" value="d"> D) Vincent van Gogh</li>
+                </ul>
+                <button onclick="responder('q3', 'pergunta4')">Responder</button>
+                <button onclick="showQuestion('pergunta4')">Próxima Pergunta</button>
+                <p id="feedback-q3" style="display: none;">Resposta Correta: Parabéns! Você acertou!</p>
+            </div>
+            
+            <div class="question" id="pergunta4">
+                <h2>Pergunta 4:</h2>
+                <p><strong>Nível de Dificuldade:</strong> ⭐⭐</p>
+                <p>Quem foi o primeiro presidente do Brasil?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q4" value="a"> A) Getúlio Vargas</li>
+                    <li><input type="radio" name="q4" value="b"> B) Juscelino Kubitschek</li>
+                    <li><input type="radio" name="q4" value="c"> C) Deodoro da Fonseca</li>
+                    <li><input type="radio" name="q4" value="d"> D) Tancredo Neves</li>
+                </ul>
+                <button onclick="responder('q4', 'pergunta5')">Responder</button>
+                <button onclick="showQuestion('pergunta5')">Próxima Pergunta</button>
+                <p id="feedback-q4" style="display: none;">Resposta Correta: Parabéns! Você acertou!</p>
+            </div>
+            
+            <div class="question" id="pergunta5">
+                <h2>Pergunta 5:</h2>
+                <p><strong>Nível de Dificuldade:</strong> ⭐⭐⭐</p>
+                <p>Qual é o maior planeta do sistema solar?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q5" value="a"> A) Marte</li>
+                    <li><input type="radio" name="q5" value="b"> B) Júpiter</li>
+                    <li><input type="radio" name="q5" value="c"> C) Saturno</li>
+                    <li><input type="radio" name="q5" value="d"> D) Terra</li>
+                </ul>
+                <button onclick="responder('q5', 'pergunta6')">Responder</button>
+                <button onclick="showQuestion('pergunta6')">Próxima Pergunta</button>
+                <p id="feedback-q5" style="display: none;">Resposta Correta: Parabéns! Você acertou!</p>
+            </div>
+            
+            <div class="question" id="pergunta6">
+                <h2>Pergunta 6:</h2>
+                <p><strong>Nível de Dificuldade:</strong> ⭐⭐</p>
+                <p>Quem é o autor de "A Metamorfose"?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q6" value="a"> A) Franz Kafka</li>
+                    <li><input type="radio" name="q6" value="b"> B) Friedrich Nietzsche</li>
+                    <li><input type="radio" name="q6" value="c"> C) Franz Schubert</li>
+                    <li><input type="radio" name="q6" value="d"> D) Sigmund Freud</li>
+                </ul>
+                <button onclick="responder('q6', 'pergunta7')">Responder</button>
+                <button onclick="showQuestion('pergunta7')">Próxima Pergunta</button>
+                <p id="feedback-q6" style="display: none;">Resposta Correta: Parabéns! Você acertou!</p>
+            </div>
+            
+            <div class="question" id="pergunta7">
+                <h2>Pergunta 7:</h2>
+                <p><strong>Nível de Dificuldade:</strong> ⭐⭐⭐</p>
+                <p> Qual é o país com a maior área territorial?</p>
+                <ul class="options">
+                    <li><input type="radio" name="q7" value="a"> A) Canadá</li>
+                    <li><input type="radio" name="q7" value="b"> B) China</li>
+                    <li><input type="radio" name="q7" value="c"> C) Rússia</li>
+                    <li><input type="radio" name="q7" value="d"> D) Estados Unidos</li>
+                </ul>
+                <button onclick="responder('q7', 'resultado')">Responder</button>
+                <p id="feedback-q7" style="display: none;">Resposta Correta: Parabéns! Você acertou!</p>
+            </div>
+        </div>
         <div id="navigation">
             <ul id="question-list">
                 <li><a href="#" class="question-link" onclick="showQuestion('pergunta1')">1</a></li>
@@ -21,111 +130,6 @@
                 <li><a href="#" class="question-link" onclick="showQuestion('pergunta7')">7</a></li>
             </ul>
         </div>
-
-        <div class="question active" id="pergunta1">
-            <h2>Pergunta 1:</h2>
-            <p><strong>Nível de Dificuldade:</strong> ⭐</p>
-            <p>Enunciado: Qual é a capital da França?</p>
-            <ul class="options">
-                <li><input type="radio" name="q1" value="a"> A) Londres</li>
-                <li><input type="radio" name="q1" value="b"> B) Paris</li>
-                <li><input type="radio" name="q1" value="c"> C) Roma</li>
-                <li><input type="radio" name="q1" value="d"> D) Brasília</li>
-            </ul>
-            <button onclick="responder('q1', 'pergunta2')">Responder</button>
-            <button onclick="showQuestion('pergunta2')">Próxima Pergunta</button>
-            <p id="feedback-q1" style="display: none;">Resposta Correta: Parabéns! Você acertou!</p>
-        </div>
-
-        <div class="question" id="pergunta2">
-            <h2>Pergunta 2:</h2>
-            <p><strong>Nível de Dificuldade:</strong> ⭐⭐</p>
-            <p>Enunciado: Quem escreveu "Dom Quixote"?</p>
-            <ul class="options">
-                <li><input type="radio" name="q2" value="a"> A) William Shakespeare</li>
-                <li><input type="radio" name="q2" value="b"> B) Miguel de Cervantes</li>
-                <li><input type="radio" name="q2" value="c"> C) Machado de Assis</li>
-                <li><input type="radio" name="q2" value="d"> D) Fernando Pessoa</li>
-            </ul>
-            <button onclick="responder('q2', 'pergunta3')">Responder</button>
-            <button onclick="showQuestion('pergunta3')">Próxima Pergunta</button>
-            <p id="feedback-q2" style="display: none;">Resposta Correta: Parabéns! Você acertou!</p>
-        </div>
-
-        <div class="question" id="pergunta3">
-            <h2>Pergunta 3:</h2>
-            <p><strong>Nível de Dificuldade:</strong> ⭐</p>
-            <p>Enunciado: Quem pintou "Mona Lisa"?</p>
-            <ul class="options">
-                <li><input type="radio" name="q3" value="a"> A) Michelangelo</li>
-                <li><input type="radio" name="q3" value="b"> B) Leonardo da Vinci</li>
-                <li><input type="radio" name="q3" value="c"> C) Pablo Picasso</li>
-                <li><input type="radio" name="q3" value="d"> D) Vincent van Gogh</li>
-            </ul>
-            <button onclick="responder('q3', 'pergunta4')">Responder</button>
-            <button onclick="showQuestion('pergunta4')">Próxima Pergunta</button>
-            <p id="feedback-q3" style="display: none;">Resposta Correta: Parabéns! Você acertou!</p>
-        </div>
-        
-        <div class="question" id="pergunta4">
-            <h2>Pergunta 4:</h2>
-            <p><strong>Nível de Dificuldade:</strong> ⭐⭐</p>
-            <p>Enunciado: Quem foi o primeiro presidente do Brasil?</p>
-            <ul class="options">
-                <li><input type="radio" name="q4" value="a"> A) Getúlio Vargas</li>
-                <li><input type="radio" name="q4" value="b"> B) Juscelino Kubitschek</li>
-                <li><input type="radio" name="q4" value="c"> C) Deodoro da Fonseca</li>
-                <li><input type="radio" name="q4" value="d"> D) Tancredo Neves</li>
-            </ul>
-            <button onclick="responder('q4', 'pergunta5')">Responder</button>
-            <button onclick="showQuestion('pergunta5')">Próxima Pergunta</button>
-            <p id="feedback-q4" style="display: none;">Resposta Correta: Parabéns! Você acertou!</p>
-        </div>
-        
-        <div class="question" id="pergunta5">
-            <h2>Pergunta 5:</h2>
-            <p><strong>Nível de Dificuldade:</strong> ⭐⭐⭐</p>
-            <p>Enunciado: Qual é o maior planeta do sistema solar?</p>
-            <ul class="options">
-                <li><input type="radio" name="q5" value="a"> A) Marte</li>
-                <li><input type="radio" name="q5" value="b"> B) Júpiter</li>
-                <li><input type="radio" name="q5" value="c"> C) Saturno</li>
-                <li><input type="radio" name="q5" value="d"> D) Terra</li>
-            </ul>
-            <button onclick="responder('q5', 'pergunta6')">Responder</button>
-            <button onclick="showQuestion('pergunta6')">Próxima Pergunta</button>
-            <p id="feedback-q5" style="display: none;">Resposta Correta: Parabéns! Você acertou!</p>
-        </div>
-        
-        <div class="question" id="pergunta6">
-            <h2>Pergunta 6:</h2>
-            <p><strong>Nível de Dificuldade:</strong> ⭐⭐</p>
-            <p>Enunciado: Quem é o autor de "A Metamorfose"?</p>
-            <ul class="options">
-                <li><input type="radio" name="q6" value="a"> A) Franz Kafka</li>
-                <li><input type="radio" name="q6" value="b"> B) Friedrich Nietzsche</li>
-                <li><input type="radio" name="q6" value="c"> C) Franz Schubert</li>
-                <li><input type="radio" name="q6" value="d"> D) Sigmund Freud</li>
-            </ul>
-            <button onclick="responder('q6', 'pergunta7')">Responder</button>
-            <button onclick="showQuestion('pergunta7')">Próxima Pergunta</button>
-            <p id="feedback-q6" style="display: none;">Resposta Correta: Parabéns! Você acertou!</p>
-        </div>
-        
-        <div class="question" id="pergunta7">
-            <h2>Pergunta 7:</h2>
-            <p><strong>Nível de Dificuldade:</strong> ⭐⭐⭐</p>
-            <p>Enunciado: Qual é o país com a maior área territorial?</p>
-            <ul class="options">
-                <li><input type="radio" name="q7" value="a"> A) Canadá</li>
-                <li><input type="radio" name="q7" value="b"> B) China</li>
-                <li><input type="radio" name="q7" value="c"> C) Rússia</li>
-                <li><input type="radio" name="q7" value="d"> D) Estados Unidos</li>
-            </ul>
-            <button onclick="responder('q7', 'resultado')">Responder</button>
-            <p id="feedback-q7" style="display: none;">Resposta Correta: Parabéns! Você acertou!</p>
-        </div>
-
         <!-- Adicione mais perguntas aqui -->
 
         <div class="feedback">
@@ -133,10 +137,9 @@
             <p id="feedback-final" style="display: none;"></p>
         </div>
 
-        <div id="timer">Timer: [00:00:00]</div>
-        <div id="score">Pontuação: [Pontos: 0]</div>
+        <!-- <div id="timer">Timer: [00:00:00]</div>
+        <div id="score"> </div> Pontuação: [Pontos: ${ponts} ] ! -->
     </div>
-
     <script src="jss/quiz.js"></script>
 </body>
 </html>

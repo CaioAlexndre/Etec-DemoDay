@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil do Usuário</title>
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/estatisticas.css">
+    <style>
+        body {
+            background-color: #F8BD49;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="profile-section">
-            <img src="img/placeholder.jpg" alt="Foto do Usuário">
-            <button id="settings-button">Configuração</button>
-            <button id="profile-button">Veja seu perfil</button>
-        </div>
-        <div class="stats-section">
-            <h2>Estatísticas</h2>
-            <p>Vitórias: <span id="victories">0</span></p>
-            <p>Tempo jogado: <span id="playtime">0 horas</span></p>
-            <p>Principal disciplina: <span id="main-discipline">Nenhuma</span></p>
-        </div>
-        <div class="help-center">
-            <button>Central de Ajuda</button>
-            <p>Para mais informações, entre em contato com nosso suporte.</p>
+    <div class="align-container">
+        <img class="img-outside" src="img/usuario.png" alt="">
+
+        <div class="container-interface">
+            <div class="profile-section">
+                <img src="img/Branco_e_Quadrado_Preto_Imobiliária_Logotipo-removebg-preview.png" alt="Foto do Usuário">
+                <button id="settings-button">Configuração</button>
+                <button id="profile-button">Veja seu perfil</button>
+            </div>
+            <div class="stats-section; font-montserrat">
+                <h2 class="font-fredoka">Estatísticas</h2>
+                <p>Vitórias: <span id="victories">0</span></p>
+                <p>Tempo jogado: <span id="playtime">0 horas</span></p>
+                <p>Principal disciplina: <span id="main-discipline">Nenhuma</span></p>
+            </div>
+            <div class="help-center">
+                <button>Central de Ajuda</button>
+                <p>Para mais informações, entre em contato com nosso suporte.</p>
+            </div>
         </div>
     </div>
     <script src="jss/script.js"></script>
 </body>
+
 </html>

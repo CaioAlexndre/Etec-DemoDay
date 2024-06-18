@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Registro</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <style>
+        body {
+            background-color: #7D85DF;
+        }
+    </style>
 </head>
-<body>
-    <div class="register-container">
-        <h2>Registro</h2>
-        <form id="register-form">
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="password" id="password" placeholder="Senha" required>
-            <input type="text" id="username" placeholder="Nome de Usuário" required>
-            <input type="text" id="institution" placeholder="Instituição" required>
-            <button type="submit">Registrar</button>
-        </form>
-        <p>Já tem uma conta? 
-            <br>
-            <br>
-        <a href="TelaLogin.html" id="go-to-login">Login</a></p>
-    </div>
 
+<body>
+    <div class="align-container">
+        <img src="img/registro.png" alt="">
+    </div>
+    <div class="register-container">
+        <h1 class="font-fredoka">Registro</h1>
+        <form id="register-form" class="font-montserrat">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="confirmarPassword" placeholder="Senha" required>
+            <!-- <input type="password" id="password" placeholder="Confirme sua senha" required oninvalid="this.setCustomValidity('as')"> -->
+            <input type="text" id="username" placeholder="Nome de Usuário" required>
+
+            <!-- <input type="text" id="institution" placeholder="Instituição" required> -->
+            <button type="submit" class="font-montserrat"><a href="selecaoQuiz.html" id="registrar">Registrar</a></button>
+        </form>
+        <p class="font-montserrat">Já tem uma conta?
+            <br>
+            <br>
+            <a href="login.html" id="go-to-login">Login</a>
+        </p>
+    </div>
     <script src="jss/script.js"></script>
 </body>
+
 </html>

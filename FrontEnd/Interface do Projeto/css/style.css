@@ -1,3 +1,13 @@
+:root{
+    --preto: #000;
+    --branco: #f5f5f5;
+    --rosa: #F15B5C;
+    --azul: #7E85DF;
+    --amarelo: #F2A74B;
+    --branco-acizentado: #eeeeee;
+  }
+
+  
 body {
     font-family: Arial, sans-serif;
     display: flex;

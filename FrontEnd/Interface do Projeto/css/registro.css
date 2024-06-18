@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Montserrat:wght@600&display=swap');
+
+:root{
+    --preto: #000;
+    --branco: #f5f5f5;
+    --rosa: #F15B5C;
+    --azul: #7E85DF;
+    --amarelo: #F2A74B;
+    --branco-acizentado: #eeeeee;
+  }  
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+}
+
+h1{
+    font-size: 2rem;
+    color: var(--rosa);
+}
+
+/* Container Registro */
+.register-container {
+    background-color: var(--branco);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    margin-right: 150px;
+    margin-left: 100px;
+    transition: width 0.3s ease;
+}
+
+.align-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.align-container img {
+    margin-left: 100px;
+    height: 50%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+}
+
+/* Gerais */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--rosa);
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+p {
+    margin-top: 20px;
+}
+
+
+
+
+/* Fontes */
+.font-fredoka {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.font-montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .register-container {
+        width: 350px;
+    }
+}
+
+@media (max-width: 992px) {
+    .register-container {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .align-container img {
+        display: none;
+    }
+
+    .register-container {
+        width: 80%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-container {
+        width: 90%;
+        max-width: 260px;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: var(--rosa);
+}
+
+#registrar{
+    color: var(--branco);
+}
+

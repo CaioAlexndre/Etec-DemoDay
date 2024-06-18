@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ranking Geral</title>
-    
     <link rel="stylesheet" href="css/ranking.css">
+    <link rel="stylesheet" href="css/header.css">
+    <style>
+        body {
+            background-image: url('img/backgroud_ranking_geral.png');
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <nav class="nav">
+        <nav class="font-montserrat nav">
             <p>QUIZ ETEC ALBERT EINSTEIN</p>
             <div class="right-section">
                 <div class="user-header">
-                    <img src="img/placeholder.jpg" alt="user">
-                    <p id="username-header">username</p>
+                    <a href="usuario.html"><img id="userfoto-header" src="img/placeholder.jpg" alt="user">
+                        <p id="username-header">username</p>
+                    </a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="ranking-container">
-        <h1>Ranking</h1>
-        <!--<div class="ranking" id="ranking">
+    <div class="ranking-container-geral">
+        <h1 class="font-fredoka">Ranking</h1>
+        <div class="ranking" id="ranking">
             <div class="ranking-item">
                 <span>1</span>
                 <img class="img-user" src="img/placeholder.jpg" alt="">
@@ -41,9 +49,52 @@
                 <span class="user-name" id="user-name">username</span>
                 <span class="user-pts" id="pts">pontuação</span>
             </div>
-        </div>-->
+            <div class="ranking-item">
+                <span>4</span>
+                <img class="img-user" src="img/placeholder.jpg" alt="">
+                <span class="user-name" id="user-name">username</span>
+                <span class="user-pts" id="pts">pontuação</span>
+            </div>
+            <div class="ranking-item">
+                <span>5</span>
+                <img class="img-user" src="img/placeholder.jpg" alt="">
+                <span class="user-name" id="user-name">username</span>
+                <span class="user-pts" id="pts">pontuação</span>
+            </div>
+            <div class="ranking-item">
+                <span>6</span>
+                <img class="img-user" src="img/placeholder.jpg" alt="">
+                <span class="user-name" id="user-name">username</span>
+                <span class="user-pts" id="pts">pontuação</span>
+            </div>
+            <div class="ranking-item">
+                <span>7</span>
+                <img class="img-user" src="img/placeholder.jpg" alt="">
+                <span class="user-name" id="user-name">username</span>
+                <span class="user-pts" id="pts">pontuação</span>
+            </div>
+            <div class="ranking-item">
+                <span>8</span>
+                <img class="img-user" src="img/placeholder.jpg" alt="">
+                <span class="user-name" id="user-name">username</span>
+                <span class="user-pts" id="pts">pontuação</span>
+            </div>
+            <div class="ranking-item">
+                <span>9</span>
+                <img class="img-user" src="img/placeholder.jpg" alt="">
+                <span class="user-name" id="user-name">username</span>
+                <span class="user-pts" id="pts">pontuação</span>
+            </div>
+            <div class="ranking-item">
+                <span>10</span>
+                <img class="img-user" src="img/placeholder.jpg" alt="" style="margin-left: 37px;">
+                <span class="user-name" id="user-name">username</span>
+                <span class="user-pts" id="pts">pontuação</span>
+            </div>
+        </div>
     </div>
-    
-    <script src="jss/scriptRanking.js"></script>
+
+    <script src="jss/ranking.js"></script>
 </body>
+
 </html>

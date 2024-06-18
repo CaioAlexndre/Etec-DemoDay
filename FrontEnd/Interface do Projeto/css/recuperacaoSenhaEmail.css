@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Montserrat:wght@&display=swap');
+
+:root{
+    --preto: #000;
+    --branco: #f5f5f5;
+    --rosa: #F15B5C;
+    --azul: #7E85DF;
+    --amarelo: #F2A74B;
+    --branco-acizentado: #eeeeee;
+  }  
+
+
+body{
+margin-top: 10%;
+overflow: hidden;
+width: 100vw;
+height: 50vh;
+font-family: "Montserrat", sans-serif;
+font-size: 16px;
+display:flex;
+justify-content: center;
+background-color: var(--amarelo);
+}
+
+
+
+.container{
+padding: 20px 30px;
+background-color: var(--branco);
+width: 40vw;
+height: 90%;
+border-radius: 8px;
+}
+
+
+#email{
+    padding: 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 94%;
+    display: block;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn-enviar{
+margin-top: 20px;
+padding: 15px;
+display: block;
+ border: none;
+ border-radius: 10px;
+ background-color: var(--rosa);
+ color: var(--branco);
+}
+
+#btn-back{
+    margin-top: 20px;
+padding: 15px;
+display: block;
+ border: 1px solid var(--rosa);
+ border-radius: 10px;
+ background-color: transparent;
+ color: var(--rosa);
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+    cursor: pointer; 
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: "Fredoka", sans-serif;
+    font-size: 2rem;
+    color: var(--rosa);
+}

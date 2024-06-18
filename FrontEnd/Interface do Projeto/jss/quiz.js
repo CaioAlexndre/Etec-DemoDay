@@ -1,4 +1,33 @@
+var ponts = 0;
+
+
+// function showQuestion(questionId) {
+//     var questions = document.querySelectorAll('.question');
+//     for (var i = 0; i < questions.length; i++) {
+//         questions[i].classList.remove('active');
+//     }
+//     document.getElementById(questionId).classList.add('active');
+
+// }
+
+// mudei um pouco para impedir que o usuario avance. depois tehno q fazer com q ele possa voltar ou n passar sem responder a questão.
+
 function showQuestion(questionId) {
+    var currentQuestion = document.querySelector('.question.active');
+    var radios = currentQuestion.querySelectorAll('input[type="radio"]');
+    var answered = false;
+
+    for (var i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            answered = true;
+            break;
+        }
+    }
+
+    if (!answered) {
+        alert('Por favor, selecione uma resposta antes de continuar.');
+        return;
+    }
     var questions = document.querySelectorAll('.question');
     for (var i = 0; i < questions.length; i++) {
         questions[i].classList.remove('active');
@@ -7,6 +36,7 @@ function showQuestion(questionId) {
 }
 
 function responder(pergunta, proximaPerguntaId) {
+
     var respostaCorreta;
     var feedbackId = "feedback-" + pergunta;
 
@@ -36,6 +66,7 @@ function responder(pergunta, proximaPerguntaId) {
         // Adicione os casos para as outras perguntas
     }
 
+
     // Verificar qual opção o usuário selecionou
     var respostaUsuario;
     var radios = document.getElementsByName(pergunta);
@@ -46,12 +77,18 @@ function responder(pergunta, proximaPerguntaId) {
         }
     }
 
+
     var feedback = document.getElementById(feedbackId);
     if (respostaUsuario === respostaCorreta) {
         feedback.innerHTML = "Resposta Correta: Parabéns! Você acertou!";
+        feedback.style.color = "green";
+        ponts ++; // para adicionar pontos por acerto
+
     } else {
-        feedback.innerHTML = "Resposta Incorreta: A resposta correta era: " + respostaCorreta.toUpperCase();
+        feedback.innerHTML = "Resposta Incorreta: A resposta correta era: " + respostaCorreta; //.toUpperCase();
+        feedback.style.color = "red";  
     }
+
     feedback.style.display = "block";
 
     // Ocultar o botão de resposta
@@ -71,4 +108,6 @@ function responder(pergunta, proximaPerguntaId) {
         document.getElementById("feedback-final").innerHTML = "Parabéns! Você concluiu o quiz!";
         document.getElementById("feedback-final").style.display = "block";
     }
+
+    document.getElementById("score").textContent = "Pontuação: [Pontos: " + ponts + "]";
 }

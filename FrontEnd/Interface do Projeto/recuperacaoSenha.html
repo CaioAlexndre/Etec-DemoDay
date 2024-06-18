@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperação_de_senha</title>
-    <link rel="stylesheet" href="css/senharec.css">
+    <link rel="stylesheet" href="css/recuperacaoSenhaEmail.css">
 </head>
 <body>
     <main>
     <div class="container">
-        <h1 class="titulo">
-            Redefinição de Senha
-        </h1>
+        <h1 class="titulo"> Redefinição de Senha </h1>
         <p class="textinho">Para recuperar sua senha, informe o e-mail cadastrado e enviaremos uma senha provisória para o e-mail solicitado.</p>
         <p class="textinhoesq">E-mail de cadastrado:</p>
-        <input id="email" type="text" placeholder="Insira seu email" name="e-mail" id="e-mail">  
+        <input id="email" type="text" placeholder="Insira seu email" name="e-mail" id="e-mail" required>  
         <div class="buttons">
             <a href="login.html"><button id="btn-back">Voltar</button></a> 
-            <button id="btn-enviar" type="submit">Enviar senha</a></button>
+            <a href="recuperacaoSenha2.html"><button type="submit" id="btn-enviar" type="button"">Enviar senha</button></a>
         </div>
     </div>
     </main>

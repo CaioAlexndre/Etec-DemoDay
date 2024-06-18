@@ -6,12 +6,22 @@
     <title>Página inicial</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/selecaoAssunto.css">
+
+
 </head>
 <body>
     <main>
+        <header>
+            <h2 id="logo"><a href="index.html" style="color: var(--branco)">Quiz Etec Albert Einstein</a></h2>
+            <div>
+              <a href="#" style="color: #fff; text-decoration: none;">Nome do Usuário</a>
+              <a href="login.html"><button id="btn-login">Login</button></a>
+            </div>
+          </header>
+          <hr>
         <div class="container"> 
             <form action="resultado.php" method="post" class="formulario" id="formulario">
-                <input type="text" name="assunto" placeholder="Qual disciplina você procura?" id="disciplina">
+                <input type="text" onkeyup="pesquisar()" placeholder="Qual disciplina você procura?" id="disciplina-input">
                 <select name="disciplina" id="curso">
                     <option value="">Selecione o curso: </option>
                     <option value="historia">História</option>
@@ -19,13 +29,12 @@
                     <option value="matematica">Matemática</option>
                     <!-- Adicione outras disciplinas aqui -->
                 </select>
-                <button type="button" id="btn-enviar"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+                <button type="button" id="btn-enviar"><i class="fa-solid fa-magnifying-glass" style="color: #f5f5f5;"></i></button>
             </form>
             <div id="disciplinasExibidas">
-                
             </div>
         </div>
-        <script src="jss/selecaoDisciplina"></script>
+        <script src="jss/selecaoQuiz.js"></script>
     </main>
 </body>
 </html>
