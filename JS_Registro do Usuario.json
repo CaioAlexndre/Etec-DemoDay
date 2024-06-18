@@ -1,0 +1,14 @@
+fetch('/api/users', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    username: 'example',
+    email: 'example@example.com',
+    password: 'password123'
+  })
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error(error));
